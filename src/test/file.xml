@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<line>
+	<point>
+		<id>aaaaa</id>
+		<lon>419324303</lon>
+		<lat>143678550</lat>
+	</point>
+	<point>
+		<id>bbbbb</id>
+		<lon>419349245</lon>
+		<lat>143688310</lat>
+	</point>
+	<point>
+		<id>ccccc</id>
+		<lon>419325516</lon>
+		<lat>143680498</lat>
+	</point>
+</line>

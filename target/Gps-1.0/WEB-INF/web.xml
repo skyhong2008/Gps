@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<display-name>Tomcat Documentation</display-name>
+	<description>
+     	Tomcat Documentation.
+  	</description>
+	<servlet>
+		<servlet-name>Gps</servlet-name>
+		<servlet-class>dll.Gps</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Gps</servlet-name>
+		<url-pattern>/Gps</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>log4j-init</servlet-name>
+		<servlet-class>og.Log4jInit</servlet-class>
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>WEB-INF/classes/log4j.properties</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+
+	<welcome-file-list>
+		<welcome-file>jsps/index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
