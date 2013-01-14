@@ -23,7 +23,9 @@ public class CheckGPS {
     // private static String callurl = "http://119.254.82.227/gps/Gps";
     private static Logger log = Logger.getLogger(CheckGPS.class);
 
-    private static String callurl = "http://192.168.1.108:8081/Gps/Gps";
+    // private static String callurl = "http://192.168.1.108:8081/Gps/Gps";
+
+    private static String callurl = "http://192.168.1.79:8082/Gps/Gps";
 
     /**
      * @param args

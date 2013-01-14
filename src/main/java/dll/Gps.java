@@ -122,11 +122,12 @@ public class Gps extends HttpServlet {
         Element line = documentout.addElement("line");
         for (int i = 0; i < id.size(); i++) {
             Element point = line.addElement("point");
+
             Element idout = point.addElement("id", id.get(i));
             point.addElement("lon", String.valueOf(lonnew.get(i)));
             point.addElement("lat", String.valueOf(latnew.get(i)));
             log.info(" new:==lon:" + lonnew.get(i) + ",lat:" + latnew.get(i));
-
+            // Element idout = point.addElement("id");
             // Element lonout = point.addElement("lon");
             // Element latout = point.addElement("lat");
             //
@@ -135,6 +136,7 @@ public class Gps extends HttpServlet {
             // latout.setText(String.valueOf(latnew.get(i)));
         }
         String xml = documentout.asXML();
+        // log.info("xml:==" + xml);
 
         this.dos = new DataOutputStream(response.getOutputStream());
         try {
